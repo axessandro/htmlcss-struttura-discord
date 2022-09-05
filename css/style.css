@@ -7,15 +7,14 @@
 
 /* COMMON */
     .container{
-        width: 70%;
+        width: 62%;
         margin: auto;
         display: flex;
-        /* DEBUG */
-        border: 2px dashed red;  
     }
 
     html{
         font-size: 100%;
+
     }
 
 /* HEADER */
@@ -68,20 +67,19 @@
         align-items: center;
 
         /* DEBUG */
-        height: 400px;
+        height: 450px;
         width: 100%;
     }
 
 
 
     .container-bunner{
-        width: 50%;
+        width: 47%;
         margin: auto;
         
         /* DEBUG */
-        border: 2px dashed red;
-        height: 400px;
-        height: 325px;
+        border: 2px dashed rgb(0, 0, 0);
+        height: 350px;
         background-color: #ff99ff;
         border: 2px dashed black;
     }
@@ -94,19 +92,55 @@
     main section{
 
         /* DEBUG */
-        height: 600px;
+        height: 450px;
+        display: flex;
     }
 
-    section:nth-child(odd){
+    main section:last-child{
+
+        /* DEBUG */
+        height: 650px;
+        display: flex;
+    }
+
+
+    section:nth-child(even){
         background-color: #cccccc;
     }
+    section .container{
+        width: 62%;
+        margin: auto;
+        display: flex;
+        /* DEBUG */
+        border: 2px dashed rgb(0, 0, 0);  
+        height: 350px;
+    }
+
+    .last-section{
+        width: 62%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        /* DEBUG */
+        border: 2px dashed rgb(0, 0, 0);  
+        height: 550px;
+        background-color: #339933;
+    }
+    
+    .img-container{
+        width: 60%;
+
+        /* DEBUG */
+        background-color: #3399ff;
+    }
+
+    .text-container{
+        width: 40%;
+        /* DEBUG */
+        background-color: #ffcccc;
+        
+    }
+
 
 /* /MAIN */
-section .container{
-    width: 70%;
-    margin: auto;
-    display: flex;
-    /* DEBUG */
-    border: 2px dashed red;  
-    height: 350px;
-}
