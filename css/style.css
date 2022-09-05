@@ -17,52 +17,85 @@
         font-family: 'Whitney', sans-serif;
     }
 
+    .buttons{
+        margin-top: 1.2em;
+        padding: 0.8em;
+        font-size: 1.0rem;
+        background-color: white;
+        border-radius: 20px;
+        border: white;
+    }
+
+    .dark-button{
+        color: white;
+        background-color: #333333;
+    }
+
 /* HEADER */
     header{
-        background-color: #ccffff;
-        height: 5em;
+        background-color: #265ee8;
+        height: 3em;
         display: flex;
         text-align: center;
+        color: white;
     }
 
-    nav{
-        display: flex ;
-        flex-direction: row;
-    }
 
     .nav-bar{
-        background-color: #cc9933;
         display: flex;
+        justify-content: space-between;
+    }
+
+    
+    #logo img{
+        width: 100%;
     }
 
     .nav-item:nth-child(2){
         width: 50%;
-        /* DEBUG */
-        border: 2px dashed black;
     }
 
     .nav-item:nth-child(odd){
-        width: 25%;
-        padding: 0.5em;
-        /* DEBUG */
-        border: 2px dashed black;
+        width: 10%;
+        padding: 0.1em;
+        display: flex;
+
     }
     .nav-item:nth-child(3){
-        text-align: end;
+        vertical-align: middle;
+        line-height: 2em;
+        padding-left: 1.5em;
     }
+
+    .nav-button{
+        color: rgb(42, 42, 42);
+        background-color: white;
+        border-radius: 20px;
+        width: 15%;
+        
+    }
+
 
     ul{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         list-style-type: none;
     }
 
     li{
         padding: 0.5em;
+    
     }
 
+    li:hover{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+
     .bunner{
-        background-color: #000099;
+        background-image: url(../img/jumbo.png);
+        background-size: cover;
+        background-position: center;
         display: flex;
         align-items: center;
 
@@ -76,14 +109,29 @@
     .container-bunner{
         width: 47%;
         margin: auto;
+        text-align: center;
         
-        /* DEBUG */
-        border: 2px dashed rgb(0, 0, 0);
-        height: 350px;
-        background-color: #ff99ff;
-        border: 2px dashed black;
     }
 
+    .container-bunner h1{
+        color: white;
+        margin-bottom: 0.8em;
+        font-size: 2.7rem;
+    }
+
+    .container-bunner p{
+        color: white;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .button-container{
+        display: flex;
+        width: 55%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
 
 /* /HEADER */
 
